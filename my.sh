@@ -1,3 +1,3 @@
 #! /bin/bash
 
-echo "Hi"
+echo ["data1","data2"]
