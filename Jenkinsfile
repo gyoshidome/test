@@ -14,8 +14,8 @@ pipeline {
                 sh("ls")
                 sh("chmod 700 my.sh")
                 script{
-                    me = sh (script: './my.sh', returnStdout: true)
-                    echo $me
+                    def me = sh (script: './my.sh', returnStdout: true)
+                    println me
                 }
             }
         }
