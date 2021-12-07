@@ -12,6 +12,7 @@ pipeline {
                 echo 'Testing..'
                 sh("pwd")
                 sh("ls")
+                sh("chmod 700 my.sh")
                 sh("./my.sh")
             }
         }
