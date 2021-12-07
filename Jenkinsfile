@@ -12,6 +12,7 @@ pipeline {
                 echo 'Testing..'
                 sh("pwd")
                 sh("ls")
+                sh("./my.sh")
             }
         }
         stage('Deploy') {
