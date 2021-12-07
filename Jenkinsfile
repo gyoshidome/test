@@ -13,8 +13,10 @@ pipeline {
                 sh("pwd")
                 sh("ls")
                 sh("chmod 700 my.sh")
-                me = sh (script: './my.sh', returnStdout: true)
-                echo $me
+                script{
+                    me = sh (script: './my.sh', returnStdout: true)
+                    echo $me
+                }
             }
         }
         stage('Deploy') {
